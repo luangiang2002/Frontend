@@ -34,7 +34,7 @@ a {
 .section-header .headder-main ul {
     display: flex;
     width: 100%;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 .section-header .headder-main {
@@ -42,11 +42,7 @@ a {
 }
 
 .section-header .logo {
-    flex: 2;
-}
-
-.section-header .headder-main ul li {
-    padding-left: 30px;
+    flex: 4;
 }
 
 .section-header .headder-main #toggle {

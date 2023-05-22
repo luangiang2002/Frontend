@@ -34,7 +34,7 @@ a {
 .section-header .headder-main ul {
     display: flex;
     width: 100%;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 .section-header .headder-main {
@@ -42,11 +42,7 @@ a {
 }
 
 .section-header .logo {
-    flex: 2;
-}
-
-.section-header .headder-main ul li {
-    padding-left: 30px;
+    flex: 4;
 }
 
 .section-header .headder-main #toggle {
@@ -56,7 +52,7 @@ a {
     position: relative;
 }
 
-.section-header .headder-main .main-menu a:hover {
+.section-header .headder-main .main-menu  a:hover {
     color: white;
     background-color: gray;
 }
@@ -68,6 +64,38 @@ a {
 
 }
 
+.main {
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.main .hotline {
+    width: 30%;
+    position: absolute;
+   left: 60%;
+    top: 20%;
+}
+.main .hotline input{
+    width: 100%;
+    margin: 10px 0;
+    border: 2px solid  #aabc44;
+    height: 40px;
+    padding-left: 30px;
+    outline: none;
+}
+.main .hotline h1{
+    text-transform: uppercase;
+}
+.main .hotline input[type=submit]{
+    width: 30%;
+    background-color: #aabc44;
+    color: white;
+    padding: 0;
+}
 .footer .footer-address .footer-img {
     width: 100%;
     object-fit: fill;
@@ -126,14 +154,8 @@ a {
     flex: 2;
 }
 
-@media screen and (max-width: 1400px) {
 
-}
-
-@media screen and (max-width: 1200px) {
-   
-}
-@media screen and (max-width: 820px){
+@media screen and (max-width: 820px) {
     .section-header .headder-main #menu-main {
         flex-direction: column;
         text-align: center;
@@ -161,22 +183,37 @@ a {
         z-index: 1;
         transform: all .3s;
     }
-
-
-    .footer .footer-address .footer-ft{
+   
+    .main .hotline h1{
+        font-size: 15pt;
+    }
+    .main .hotline {
+        top: 10%;
+    }
+    .main .hotline input[type=submit]{
+        width: 50px;
+    }
+    
+    .footer .footer-address .footer-ft {
         display: grid;
     }
-    .footer .footer-address .footer-img{
+
+    .footer .footer-address .footer-img {
         height: 520px;
     }
+
     .footer .footer-address .footer-img {
         object-fit: cover;
     }
-   
+
 }
-@media  screen and (max-width: 500px)  {
-   
-}
-@media  screen and (max-width: 400px)  {
-  
+@media screen and (max-width: 720px){
+    .main .hotline input{
+        margin: 3px 0;
+        height: 25px;
+    }
+    .main .hotline h1{
+        font-size: 7pt;
+    }
+
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liên hệ</title>
-    <link rel="shortcut icon" href="Pictures/trang-chu/logophongtra.png" type="index/x-icon">
+    <link rel="shortcut icon" href="Pictures/trang-chu/icon.png" type="index/x-icon">
     <link rel="stylesheet" href="common/bootstrap.min.css">
     <link rel="stylesheet" href="css/lienhe.css">
     <link rel="stylesheet" href="slick/slick.css">
@@ -46,9 +46,22 @@
                     </a>
                 </ul>
             </div>
-            
     </section>
-  
+    <section>
+        <div class="main">
+            <img src="Pictures/lien-he/banner.jpg" alt="">
+            <div class="hotline">
+               <form action="#" method="post">
+                <h1>Liên hệ với chúng tôi</h1>
+                <input type="text" placeholder="Họ tên"  required> <br>
+                <input type="email" placeholder="Email"  required><br>
+                <input type="tel" placeholder="Số điện thoại"  required><br>
+                <input type="text" placeholder="Nội dung"  required><br>
+                <input type="submit" value="Gửi">
+               </form>
+            </div>
+        </div>
+    </section>
   
   
     <section class="section">
@@ -93,4 +106,15 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/trangchu.js"></script>
+    <script>
+
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Bạn chưa nhập tên.Vui lòng nhập!");
+                return false;
+            }
+           
+        }
+    </script>
 </body>
