@@ -63,36 +63,28 @@ a {
     padding: 15px 0;
 
 }
-.banner img{
-    width: 100%;
-    object-fit: cover;
-   
-}
-.main img{
-    width: 100%;
-    object-fit: cover
+.banner{
+    opacity: 0.5;
+    width: 80%;
+    margin: 0 auto;
 }
 .main{
-    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 1100px;
 }
-.main .main-title{
-    width: 60%;
-    position: absolute;
-    top: 0;
-    height: 100%;
+.main .product {
+display: flex;
+flex: 5;
 }
-.main .main-title h1{
-    text-align: center;
+.main .product .product-img-chilren{
+    margin-top: 30px;
 }
-.main .main-title img{
-    height: 100px;
-}
-.main .main-title p{
-    font-size: 15pt;
+.main .product #product-img-parent img{
+   width: 500px;
+   object-fit: cover;
+   margin-left: 20px;
 }
 .footer .footer-address .footer-img {
     width: 100%;
@@ -160,12 +152,7 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
-    .main .main-title p{
-        font-size: 15pt;
-    }
-    .main{
-        height: 1300px;
-    }
+   
 }
 @media screen and (max-width: 820px){
     .section-header .headder-main #menu-main {

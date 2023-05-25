@@ -1,1 +1,0 @@
-export const LOCAL_STOTRGE_NAME="dev2302lm";
